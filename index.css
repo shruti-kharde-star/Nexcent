@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+/* custom properties */
+@theme {
+  --color-green: #28CB8B;
+  --color-darkgreen: #388E3B;
+  --color-black: #4D4D4D;
+  --color-gray: #6a7282;
+  --color-blue: #F5F7FA;
+  --color-darkBlue: #263238;
+  --font-lato: "Lato", sans-serif;
+
+}
+
+/* repeated */
+@layer base {
+
+  * {
+    @apply transition-all duration-200;
+    @apply transition-colors duration-200;
+  }
+
+  h1 {
+    @apply text-[64px] leading-[76px];
+  }
+
+  h2 {
+    @apply text-[36px] leading-[44px];
+  }
+
+  h3 {
+    @apply text-[28px] leading-[36px];
+  }
+
+  h4 {
+    @apply text-[20px] leading-[28px];
+  }
+
+  p {
+    @apply text-[18px] leading-[1];
+  }
+
+  a {
+    @apply hover:text-black hover:font-medium;
+  }
+
+  button {
+    @apply bg-green px-4 py-2 flex items-center justify-center gap-2 text-white hover:bg-darkgreen hover:cursor-pointer;
+  }
+}
